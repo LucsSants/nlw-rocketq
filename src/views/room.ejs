@@ -7,9 +7,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- CSS -->
-   <link rel="stylesheet" href="styles/global.css">
-   <link rel="stylesheet" href="styles/room.css">
-   <link rel="stylesheet" href="styles/modal.css">
+   <link rel="stylesheet" href="/styles/global.css">
+   <link rel="stylesheet" href="/styles/room.css">
+   <link rel="stylesheet" href="/styles/modal.css">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,7 +17,7 @@
 
    <!-- Scripts -->
 
-  <script src="scripts/main.js" defer type="module"></script>
+  <script src="/scripts/main.js" defer type="module"></script>
 
    <title>Rocket.Q - Perguntas e Respostas</title>
  </head>
@@ -27,18 +27,18 @@
 
     <header>  
       <a href="/">
-        <img src="images/logo.svg" alt="Rocket.Q Logo">
+        <img src="/images/logo.svg" alt="Rocket.Q Logo">
       </a>
       
       <div class="buttons">
 
-        <div class="button outlined">
+        <div class="button outlined" id="room-id" data-id="323243">
           #323243
-          <img src="images/copy.svg" alt="Copiar número da sala">
+          <img src="/images/copy.svg" alt="Copiar número da sala">
         </div>
 
         <a href="#" class="button">
-          <img src="images/users-white.svg" alt="Criar Sala">
+          <img src="/images/users-white.svg" alt="Criar Sala">
           Criar Sala
         </a>
 
@@ -54,7 +54,7 @@
           
           <footer>
             <div>
-              <img src="images/lock.svg" alt="Cadeado">
+              <img src="/images/lock.svg" alt="Cadeado">
               Esta pergunta é anônima!
             </div>
             <button>Enviar</button>            
@@ -73,7 +73,7 @@
             <div class="question-content">
 
               <div class="user">
-                <img src="images/user.svg" alt="Avatar">
+                <img src="/images/user.svg" alt="Avatar">
               </div>
                 <div class="question">
                   <p>Qual a diferença entre const, var e let no JavaScript?</p>
@@ -81,12 +81,12 @@
             </div>
 
             <div class="actions">
-              <a href="#" class="check">
-                <img src="images/check.svg" alt="Check">
+              <a href="#" class="check" data-id="2">
+                <img src="/images/check.svg" alt="Check">
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
-                <img src="images/trash.svg" alt="Exlcuir">
+              <a href="#" class="delete" data-id="2">
+                <img src="/images/trash.svg" alt="Exlcuir">
                 Exlcuir
               </a>
             </div>
@@ -96,7 +96,7 @@
             <div class="question-content">
 
               <div class="user">
-                <img src="images/user.svg" alt="Avatar">
+                <img src="/images/user.svg" alt="Avatar">
               </div>
                 <div class="question">
                   <p>Oque é JavaScript?</p>
@@ -104,12 +104,12 @@
             </div>
 
             <div class="actions">
-              <a href="#" class="check">
-                <img src="images/check.svg" alt="Check">
+              <a href="#" class="check" data-id="3">
+                <img src="/images/check.svg" alt="Check">
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
-                <img src="images/trash.svg" alt="Exlcuir">
+              <a href="#" class="delete" data-id="3">
+                <img src="/images/trash.svg" alt="Exlcuir">
                 Exlcuir
               </a>
             </div>
@@ -119,7 +119,7 @@
             <div class="question-content">
 
               <div class="user">
-                <img src="images/user.svg" alt="Avatar">
+                <img src="/images/user.svg" alt="Avatar">
               </div>
                 <div class="question">
                   <p>Qual a diferença entre const, var e let no JavaScript? sdajfhsjk fhsdjfk sljkdfgh uifasdi sdgf tgsdfyt bosda fbsdfg sdfh sdjgcfibusag fsdagf sadtgfb ysdgf jgsadjkfg uaistdfb io gsdfg asdb fhg y ayudsgfhgasdgfhs fkhj shajdgf yugf asdvuydftg adrtf adsg fjhadsgf uyaf gads hjdghf sdgf iusahdf asndfui hifg iuasfdgui gsdfui gsifuisafg gasdfui uiasg fiusag fi</p>
@@ -127,12 +127,12 @@
             </div>
 
             <div class="actions">
-              <a href="#" class="check">
-                <img src="images/check.svg" alt="Check">
+              <a href="#" class="check" data-id="4">
+                <img src="/images/check.svg" alt="Check">
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
-                <img src="images/trash.svg" alt="Exlcuir">
+              <a href="#" class="delete"data-id="4">
+                <img src="/images/trash.svg" alt="Exlcuir">
                 Exlcuir
               </a>
             </div>
@@ -142,7 +142,7 @@
             <div class="question-content">
 
               <div class="user">
-                <img src="images/user.svg" alt="Avatar">
+                <img src="/images/user.svg" alt="Avatar">
               </div>
                 <div class="question">
                   <p>Oque é TypeScript?</p>
@@ -151,8 +151,8 @@
 
             <div class="actions">
             
-              <a href="#" class="delete">
-                <img src="images/trash.svg" alt="Exlcuir">
+              <a href="#" class="delete" data-id="1">
+                <img src="/images/trash.svg" alt="Exlcuir">
                 Exlcuir
               </a>
             </div>
@@ -170,7 +170,7 @@
     <h2>Excluir Pergunta</h2>
     <p>Tem certeza que você deseja excluir essa pergunta?</p>
 
-    <form action="">
+    <form action="#" method="POST">
       <label class="sr-only" for-id="password" >Digite sua senha</label>
       <input type="password" id="password" name="password" placeholder="Digite sua senha">
       
