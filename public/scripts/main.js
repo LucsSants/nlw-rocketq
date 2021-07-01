@@ -6,6 +6,7 @@ const modalTitle = document.querySelector(".modal h2")
 const modalDescription = document.querySelector(".modal p")
 const modalButton = document.querySelector(".modal button")
 
+
 //pegar todos os botões com a classe check 
 const checkButtons = document.querySelectorAll(".actions a.check")
 
@@ -39,5 +40,9 @@ function handleClick(event, check = true) {
   check ? modalButton.classList.remove("red") : modalButton.classList.add("red")
 
 }
+
+
+
+
 
 

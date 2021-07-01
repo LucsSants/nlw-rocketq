@@ -13,6 +13,30 @@ header {
   grid-area: header;
 }
 
+.content header{
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.content header img {
+  width: 16.7rem;
+   margin-left: 15rem;
+
+}
+
+.content header .toggle {
+  margin-right: 25rem;
+  padding: 1.3rem 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
 #bg {
   grid-area: left;
 
@@ -43,6 +67,7 @@ main h2 {
 input {
     border: .2rem solid var(--blue-grey);
     padding: 0 1.6rem;
+    
 
     outline: none;
 
