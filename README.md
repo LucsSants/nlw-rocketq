@@ -1,1 +1,1 @@
-﻿# rocketq - Projeto desenvolvido junto com a <a> <a/>
+﻿# rocketq - Projeto desenvolvido junto com a <a href="https://rocketseat.com.br/">Rocketseat<a/> no NLW together!!!
