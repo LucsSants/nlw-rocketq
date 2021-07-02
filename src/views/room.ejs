@@ -19,11 +19,16 @@
     <!-- Scripts -->
  
    <script src="/scripts/main.js" defer type="module"></script>
-  <script src="/scripts/darkMode.js" defer type="module"></script>
+   <script src="/scripts/darkMode.js" defer type="module"></script>
+   <script src="/scripts/notification.js" defer type="module"></script>
+   
+   
  
    <!-- Icons -->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
+
+   
   
  
     <title>Rocket.Q - Perguntas e Respostas</title>
@@ -105,7 +110,7 @@
                    <img src="/images/check.svg" alt="Check">
                    Marcar como lida
                  </a>
-                 <a href="#" class="delete" data-id="<%= question.id %>">
+                 <a href="#" class="delete" name="delete" data-id="<%= question.id %>">
                    <img src="/images/trash.svg" alt="Exlcuir">
                    Exlcuir
                  </a>
@@ -113,7 +118,6 @@
              </div>
              
              <% }); %> 
- 
  
  
  
@@ -166,8 +170,17 @@
  
    </div>
  </div>
+
+ <!-- Notification -->
+<div class="alert">
+
+  <div class="msg"> 
+    <span class="material-icons" id="g-check">
+    done
+    </span>
+    <span class="msg-p"> Copiado com sucesso!</span>
+  </div>
  
   </body>
 </html>
- 
 

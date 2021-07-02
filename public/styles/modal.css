@@ -52,7 +52,8 @@ color: var(--black);
 .modal-wrapper .modal .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+  
 }
 
 .modal-wrapper .modal .buttons > .button {

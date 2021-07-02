@@ -1,14 +1,18 @@
 const Database = require('../db/config')
 
+
+
 module.exports = {
+  
 
   async index(req, res) {
     const db = await Database()
-
+    const notiSwitch = req.params.notiswitch
     const roomId = req.params.room
     const questionId = req.params.question
     const action = req.params.action
     const password = req.body.password  //é o name que ta no input **name**
+
 
     const verifyRoom = await db.get(`SELECT * FROM rooms WHERE id = ${roomId}`)
 
@@ -21,7 +25,7 @@ module.exports = {
         await db.run(`UPDATE questions SET read = 1 WHERE id = ${questionId}`)
         
       }
-      res.redirect(`/room/${roomId}`)
+      res.redirect(`/room/${roomId}` )
     } else {
       res.render('passincorrect', {roomId: roomId})
     }

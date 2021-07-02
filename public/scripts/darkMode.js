@@ -12,7 +12,8 @@ const initialColors = {
   overlay: getStyle(html,"--overlay"),
   white: getStyle(html,"--white"),
   black: getStyle(html,"--black"),
-  lightBlue: getStyle (html,"--light-blue")
+  lightBlue: getStyle (html,"--light-blue"),
+  darkGrey: getStyle(html,"--dark-grey")
 }
 
 const darkMode = {
@@ -21,6 +22,7 @@ const darkMode = {
   white: "#393939",
   black: "#E0ECFF",
   lightBlue: "#2A3C57",
+  darkGrey:"#EAECF2"
 }
 
 const transformKey = key => "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
@@ -67,3 +69,4 @@ if (getValeuLocalStorage('modo') === "initialColors") {
   checkBox.setAttribute('checked', "")
   changeColors(darkMode);
 }
+

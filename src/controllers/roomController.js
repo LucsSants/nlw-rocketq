@@ -1,5 +1,6 @@
 const Database = require("../db/config")
 
+
 module.exports = {
   async create(req,res) {
     const db = await Database()
@@ -51,7 +52,7 @@ module.exports = {
       }
     }
 
-    res.render('room',{roomId: roomId, questions: questions, questionsRead: questionsRead, isNoQuestions: isNoQuestions })
+    res.render('room',{roomId: roomId, questions: questions, questionsRead: questionsRead, isNoQuestions: isNoQuestions})
 
   },
 

@@ -26,7 +26,7 @@ html{
 
 body {
   display: flex;
-
+  overflow: hidden;
   height: 100vh;
   background: var(--background);
 
@@ -100,13 +100,13 @@ button.outlined,
 button.red,
 .button.red {
   background: var(--Red);
-  color: var(--white);
+  color: #FAFAFA;
 }
 
 button.grey,
 .button.grey {
   background: var(--light-grey);
-  color: var(--dark-grey);
+  color: #4D5E77;
 }
 
 

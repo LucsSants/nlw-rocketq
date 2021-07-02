@@ -6,7 +6,6 @@
   "scripts": {
     "start": "nodemon .",
     "init-db": "node src/db/init.js"
-
   },
   "repository": {
     "type": "git",
