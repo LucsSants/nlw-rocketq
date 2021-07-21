@@ -15,7 +15,7 @@ const removeAlert = () => {
 }
 
 const copyId = (event) => {  
-  navigator.clipboard.writeText(roomId.getAttribute("data-id"))
+ navigator.clipboard.writeText(roomId.getAttribute("data-id"))
   addAlert()
   setTimeout(removeAlert, 2000)
 
@@ -23,7 +23,12 @@ const copyId = (event) => {
 
 roomId.addEventListener("click", (event) => copyId(event))
 
-export default Alert()
+
+
+
+
+
+
 
 
 
